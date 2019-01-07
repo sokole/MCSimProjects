@@ -18,7 +18,7 @@ gc()
 library(MCSim)
 
 library(tidyverse)
-# library(vegan)
+library(vegan)
 library(labdsv)
 
 
@@ -50,7 +50,7 @@ my_niche_breadth_multiplier <- 1 #increases neutrality by increasing niche bredt
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # naming scheme for scneario used to label output files
-my_scenario_name <- paste0('Wr',my_W.r,'_nicheBreadth',my_niche_breadth_multiplier)
+my_scenario_name <- paste0('Wr',my_W.r,'_nicheBreadth',my_niche_breadth_multiplier,'_timesteps',my_n.timestep)
 
 # default is no invasion
 # my_nu <- 0.001 #metacommunity invasion probability
